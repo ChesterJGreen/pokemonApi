@@ -16,13 +16,46 @@
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">pokemonApi</span>
+                <img src="https://i.pinimg.com/originals/81/a4/6e/81a46e8fefd72897daaf2032d9602b60.png" width="100"
+                    height="100" alt="" loading="lazy">
+                <span class="ml-2">
+                    Pokemon Api
+                </span>
             </a>
         </nav>
     </header>
-    <main class="container">
-        <div id="app"></div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-7">
+                <div class="row border">
+                    <div class="col-12 border bg-light">
+                        <h2>All Pokemon</h2>
+                    </div>
+                    <div class="col-12 side-bar-scroll">
+                        <p id="api-pokemon"></p>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col-12 border bg-light">
+                        <h2>Caught Pokemon</h2>
+                    </div>
+                    <div class="col-12 side-bar-scroll">
+                        <p id="my-pokemon"></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5 border">
+                <div class="row">
+                    <div class="col-12 border bg-light">
+                        <h2>Active Pokemon</h2>
+                    </div>
+                    <div class="col-12">
+                        <p id="active-pokemon"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
@@ -30,6 +63,9 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
