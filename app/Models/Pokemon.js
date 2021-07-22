@@ -17,7 +17,7 @@ export default class Pokemon {
         <div class="row">
 
             <div class="col-6">
-                <h3>${this.name}</h3>
+                <h3>${this.name.toUpperCase()}</h3>
                 <p>Types: ${this.types.join(", ")}</p>
                 <p>Height: ${this.height}</>
                 <p>Weight: ${this.weight}</>
@@ -29,7 +29,7 @@ export default class Pokemon {
                 </div>
         </div>
     </div>
-    <div class="col-12 car bg-light shadow">
+    <div class="col-12 bg-light shadow">
         <img src="${this.img}" class="w-80 image-center" alt="${this.name}">
     </div>
 </div>
