@@ -12,11 +12,11 @@ export default class Pokemon {
   }
   get Template() {
     return `
-    <div class="row image-card">
+    <div class="row image-card pb-3">
     <div class="col-12">
-        <div class="row">
+        <div class="row align-self-center">
 
-            <div class="col-6">
+            <div class="col-6 pt-3">
                 <h3>${this.name.toUpperCase()}</h3>
                 <p>Types: ${this.types.join(", ")}</p>
                 <p>Height: ${this.height}</>
