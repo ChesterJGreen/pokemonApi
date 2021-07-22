@@ -5,8 +5,8 @@ function _drawAll() {
   const pokemon = ProxyState.myPokemons
   const activePokemon = ProxyState.activePokemon || {}
   let template = ""
-  pokemon.forEach(p => template`<li class="action ${activePokemon.id === p.id ? 'text-primary' : ''}" onclick="app.myPokemonsController.setPokemon('${p.id}')">`)
-  document.getElementById()
+  pokemon.forEach(p => template += `<li class="action ${activePokemon.id === p.id ? 'text-primary' : ''}" onclick="app.myPokemonsController.setPokemon('${p.id}')">`)
+  document.getElementById('my-pokemon').innerHTML = ProxyState.myPokemons.Template
 }
 
 export default class MyPokemons {
