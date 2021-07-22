@@ -10703,7 +10703,7 @@ main {
 }
 
 .side-bar-scroll {
-  max-height: 40vh;
+  height: 29vh;
   overflow-y: auto;
 }
 
@@ -10718,7 +10718,12 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
+}
+
+.btn-image {
+  display: block;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
